@@ -1,0 +1,21 @@
+{
+  "name": "@mwe/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "types": "./dist/node.d.ts",
+  "main": "./dist/node.js",
+  "exports": {
+    "import": {
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.mjs"
+    },
+    "require": {
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    }
+  },
+  "dependencies": {
+    "@tiptap/pm": "^2.27.2"
+  }
+}

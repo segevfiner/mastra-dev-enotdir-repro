@@ -3,7 +3,8 @@
 Minimal reproduction of a **noisy but non-fatal** `ENOTDIR` error printed (twice) by
 `mastra dev` / `mastra build` during dependency analysis.
 
-> **Related upstream issue:** [mastra-ai/mastra#18849](https://github.com/mastra-ai/mastra/issues/18849).
+> **Related upstream issue:** [mastra-ai/mastra#18849](https://github.com/mastra-ai/mastra/issues/18849)
+> ([tracked as a comment](https://github.com/mastra-ai/mastra/issues/18849#issuecomment-4886931656)).
 > This is a second symptom of the **same root cause** described there — `@mastra/deployer`
 > resolving a package's `package.json` through the `exports` gate via `local-pkg`
 > (`getPackageRootPath` → `getPackageInfo`) instead of reading it from disk. In #18849 the
